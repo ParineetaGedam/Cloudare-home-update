@@ -1,0 +1,51 @@
+.term-container{
+    padding:100px 40px 42px;
+    font-size:26px;
+    font-family: "Ember";
+
+
+}
+article{
+    padding:18px 0;
+    display:block;
+}
+.term-container h4, .term-container h3, .term-container p{
+    padding:5px 0;
+    margin:6px;
+}
+.article h3{
+    font-size: 24px;}
+article p{
+    color:rgb(83, 79, 79);
+    line-height: 30px;
+    
+}
+.term-container li{
+    
+    font-size: 18px;
+     color:rgb(83, 79, 79);
+}
+.term-container ul{
+    margin: 0;
+    padding: 0 ;
+}
+.table{
+    display:grid;
+   grid-template-columns: auto auto auto auto auto;
+ padding:50px 10px;
+ 
+}
+.grid-item,.header{
+  border: 1px solid rgb(202, 202, 202);
+  padding: 12px 10px;
+  color:rgb(83, 79, 79)
+}
+.grid-item{
+    font-size:16px;
+}
+.grid-item a{
+    font-size:16px;
+}
+.header{
+     font-size: 20px;
+}

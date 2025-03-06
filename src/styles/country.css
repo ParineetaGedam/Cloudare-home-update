@@ -1,0 +1,113 @@
+/* Base styles */
+.country-select-container {
+  position: relative;
+  width: 160px;
+}
+
+.country-select-box {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.country-display {
+  display: flex;
+  align-items: center;
+}
+
+.country-flag {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.country-name {
+  font-size: 15px;
+}
+
+.country-dropdown {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.country-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Media Queries */
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .country-select-container {
+    width: 120px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+  }
+
+  .country-flag {
+    width: 15px;
+    margin-right: 5px;
+  }
+
+  .country-name {
+    font-size: 12px;
+  }
+
+  .country-dropdown {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 577px) and (max-width: 768px) {
+  .country-select-container {
+    width: 140px;
+  }
+
+  .country-flag {
+    width: 18px;
+    margin-right: 8px;
+  }
+
+  .country-name {
+    font-size: 14px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+  .country-select-container {
+    width: 160px;
+  }
+
+  .country-flag {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .country-name {
+    font-size: 15px;
+  }
+}

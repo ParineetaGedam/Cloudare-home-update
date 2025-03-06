@@ -1,0 +1,68 @@
+
+
+.faq-title p {
+  padding: 0 0 0 50px;
+  margin:0;
+}
+
+#faq h2{
+  text-align: center;
+}
+
+.fcard {
+ padding-top: 15px;
+  border-bottom: 2px solid #ccc;
+}
+
+.fcard-header {
+margin-bottom: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.fcard-header:hover {
+    background:#046b79e6;
+    padding-left: 10px;
+    color:white;
+}
+.faq-title {
+  width: 100%;
+  text-align: left;
+  padding:20px;
+  transition: all 0.3s ease 0s;
+  
+}
+.faq h5{
+    margin:5px;
+}
+ .badge {
+     display: block;
+    width: 27px;
+    height: 27px;
+    float: left;
+    border-radius: 100px;
+    text-align: center;
+    background: black;
+    color: #fff;
+    margin-right: 20px;
+}
+.fcard-body {
+      /* padding: 30px; */
+    padding-left: 78px;
+    padding-bottom: 16px;
+
+    line-height: 28px;
+ 
+}
+ .fcard-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+   .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,150 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+} */
+
+.announcement-sectionzx {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: left;
+    margin-bottom: -60px;
+    margin-top: 60px;
+}
+
+.containerzx {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.sliderzx {
+    position: relative;
+    width: 80vw; /* 50% of the viewport width */
+    height: 40vh; /* 50% of the viewport height */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added shadow for modern look */
+    margin: 0 auto; /* Center the slider */
+}
+
+.slideszx {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 10s infinite;
+}
+
+.cardzx {
+    width: 50%; /* Card width set to 50% of the slider */
+    height: 100%; /* Card height set to 100% of the slider */
+    padding: 40px 30px;
+    background-size: cover; /* Ensures the background covers the entire card */
+    background-position: center; /* Centers the background image */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white; /* Ensure text is visible on dark backgrounds */
+    position: relative;
+    z-index: 1;
+}
+
+.cardzx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.card-1zx {
+    background-image: url('https://img.freepik.com/free-photo/closeup-shot-waving-flag-malaysia-with-interesting-textures_181624-9909.jpg?t=st=1726807653~exp=1726811253~hmac=997953111ce81d6db491d034a534be63aa59c3c21b8d881f5b16d24fd60c0085&w=996'); /* Replace with your image path */
+}
+
+.card-2zx {
+    background-image: url('https://img.freepik.com/premium-photo/close-up-realistic-texture-flag-saudi-arabia_267895-3479.jpg?w=996'); /* Replace with your image path */
+}
+
+.card-3zx {
+    background-image: url('https://img.freepik.com/premium-photo/flag-united-states-america_908673-533.jpg?w=826'); /* Replace with your image path */
+}
+
+.cardzx .h3zx {
+    font-size: 24px; /* Slightly larger text */
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.read-nowzx {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+    font-weight: bold;
+}
+
+.read-nowzx:hover {
+    border-color: #007bff;
+}
+
+/* Auto Navigation Dots */
+.navigation-autozx {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.auto-btn1zx,
+.auto-btn2zx,
+.auto-btn3zx {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+@keyframes slide {
+    0%, 20% {transform: translateX(0%);}
+    25%, 45% {transform: translateX(-50%);}
+    50%, 100% {transform: translateX(0%);}
+}
+
+@media(min-width: 768px) {
+    
+
+    .sliderzx {
+        width: 80vw;  /* 50% of the viewport width */
+        height: 40vh; /* 50% of the viewport height */
+    }
+
+    .cardzx .h3zx {
+        font-size: 28px; /* Larger text on bigger screens */
+    }
+}
+
+
+.partners {
+    overflow: hidden;
+    text-align: center;
+    padding: 0px 0;
+    /* animation: slideInUp 2s; */
+    margin-top: -60px;
+}

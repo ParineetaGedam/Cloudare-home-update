@@ -1,0 +1,168 @@
+/* Global Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f0f5f8, #dce0e3);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+} */
+
+/* Horizontal Section Container */
+.wow-section-horizontal {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    max-width: 1300px;
+    /* border-radius: 15px; */
+    overflow: hidden;
+    /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+}
+
+/* Left Content (Heading and CTA) */
+.left-horizontal {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.left-horizontal h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.left-horizontal .wow-text-horizontal {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cta-button-horizontal {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #0f4c81;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-horizontal:hover {
+    background: white;
+    color: #0f4c81;
+    border: 2px solid #0f4c81;
+}
+
+/* Horizontal Steps */
+.steps-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.step-horizontal {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 250px;
+    text-align: left;
+}
+
+.step-details-horizontal h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.step-details-horizontal p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.step-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.step-details-horizontal {
+    position: relative;
+    z-index: 1;
+}
+
+/* Background Images for Steps */
+.bg-step1 {
+    background-image: url('https://img.freepik.com/free-photo/online-learning-skills-concept-laptop-screen_53876-94882.jpg?t=st=1727347405~exp=1727351005~hmac=bc4615e3c3d1e2d8ff303735b34dd758a48aa5a3e8455fdb55b59a8147156e19&w=740');
+}
+
+.bg-step2 {
+    background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df');
+}
+
+.bg-step3 {
+    background-image: url('https://img.freepik.com/free-photo/business-meeting-scene_23-2147626524.jpg?t=st=1727347471~exp=1727351071~hmac=d9fac5634250907c471e77c171149df88108c45fe2ef8e3fd5b8d0897bfd12d0&w=826');
+}
+
+.bg-step4 {
+    background-image: url('https://img.freepik.com/free-photo/medium-shot-people-working-office_23-2149313735.jpg?t=st=1727347773~exp=1727351373~hmac=eae8c71c891b40feed32cc677d841e91b6fa89b110432853967aadcb55e4bad1&w=826');
+}
+
+/* Hover Effect */
+.step-horizontal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.step-horizontal:hover::before {
+    background: rgba(0, 0, 0, 0.3); /* Less overlay on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .wow-section-horizontal {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .steps-horizontal {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .step-horizontal {
+        justify-content: center;
+        height: 300px;
+    }
+}

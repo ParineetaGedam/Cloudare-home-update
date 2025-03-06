@@ -1,0 +1,140 @@
+@import 'animate.css';
+
+@font-face {
+font-family: "Ember";
+src: url("assests/fonts/Amazon\ Ember.ttf");
+}
+@font-face {
+font-family: "EmberBold";
+src: url("assests/fonts/Amazon\ Ember\ Bold.ttf");
+}
+
+.layout{
+  display:flex;
+  flex-direction: column;
+  padding: 4%;
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+.preloader {
+  
+  border: 7px solid #1e6069;
+  border-top: 7px solid white;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  left: calc(50vw - 75px);
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader:before,
+.preloader:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+  transform: translate(-50%, -50%);
+}
+h1{
+    font-family: "EmberBold";
+    font-size: 45px;
+    animation:fadeInUp 1s;
+    
+}
+h2{
+    font-family: "EmberBold";
+     font-size: 32px;
+}
+h3{
+     font-size: 24px;
+}
+h4{
+     
+     font-size: 20px;
+}
+h5{
+     font-size: 18px;
+}
+h6{
+     font-size: 16px;
+}
+p{
+    
+      width:80%;
+}
+.tagembed-container{
+     display:flex;
+     gap:20px;
+     justify-content:center;
+     flex-direction: column;
+}
+.tagembed-container iframe{
+     
+width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px){
+     h1{
+    font-size: 40px;
+}
+h2{
+    font-family: "EmberBold";
+     font-size: 28px;
+}
+h3{
+     font-size: 20px;
+}
+h4{
+     font-size: 18px;
+}
+h5{
+     font-size: 16px;
+}
+h6{
+     font-size: 14px;
+}
+}
+
+
+#country-select div {
+     padding: 10px;
+     /* border: 1px solid #ccc; */
+     border-radius: 4px;
+     /* background-color: #f9f9f9; */
+     margin: -8px 0;
+   }
+   
+   #country-select div:hover {
+     background-color: #e9e9e9;
+   }
+   
+   
