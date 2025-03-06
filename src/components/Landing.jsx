@@ -21,7 +21,7 @@ import Button from './Button';
                         </div>
                 </header>
                 <div className="landing_image">
-                  <img className="landing-logo" src={src} />
+                  <img className="landing-logo" src={src} alt="logo" />
                 </div>
                 </div>
             </section>
