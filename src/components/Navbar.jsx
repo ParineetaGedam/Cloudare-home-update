@@ -43,7 +43,7 @@ export default function Navigation() {
           </NavLink>
         </li>
         <li className="item">
-          <a href="https://blogs.cloudare.in/">Blogs</a>
+          <a href="https://blogs.cloudare.in/" className="link">Blogs</a>
         </li>
         <CountrySelect />
       </ul>
