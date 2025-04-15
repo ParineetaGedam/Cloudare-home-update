@@ -26,14 +26,14 @@ function App() {
 document.addEventListener('DOMContentLoaded', () => {
  setLoading(false);
 });
-if(loading){
-  return(
+// if(loading){
+//   return(
    
-    <div className="preloader"></div>
+//     <div className="preloader"></div>
  
-  )
-}
-else{
+//   )
+// }
+// else{
   return (
     <div className="App">
        <Router>
@@ -61,5 +61,5 @@ else{
     </div>
   );
 }
-}
+// }
 export default App;

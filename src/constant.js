@@ -32,6 +32,9 @@ import zoho from "./assests/logo/zoho.png";
 import oracle from "./assests/logo/Oracle.svg";
 import razorpay from "./assests/logo/razorpay.svg";
 
+import odoo from "./assests/logo/odoo.png";
+import ecosi from "./assests/logo/ecosi.png";
+import Hostbook from "./assests/logo/Hostbook.png";
 //client logo
 import mindzie from "./assests/logo/mindzie.webp";
 import clearskype from "./assests/logo/clearskye.png";
@@ -170,6 +173,9 @@ export const PARTNERS = [
 //Enterprises and startups use Cloudare as SI partner
 export const PRODUCT_FIRST_SLIDER = [
   cleartax,
+  odoo,
+  ecosi,
+  Hostbook,
   ey,
   iris,
   alankit,
