@@ -178,7 +178,7 @@ export const PRODUCT_FIRST_SLIDER = [
   Hostbook,
   ey,
   iris,
-  alankit,
+  // alankit,
   cygnet,
   oracle,
   zoho,
