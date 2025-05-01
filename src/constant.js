@@ -24,10 +24,10 @@ import techgeminus from "./assests/logo/teckgeminus.png";
 //Partner logo
 import iris from "./assests/logo/iris.jpg";
 import alankit from "./assests/logo/Alankit-Healthcare.png";
-import cygnet from "./assests/logo/Cygnet.webp";
+import cygnet from "./assests/logo/cygnet-group1.png";
 import masterindia from "./assests/logo/masters-india.png";
-import cleartax from "./assests/logo/cleartax.jfif";
-import ey from "./assests/logo/ey.png";
+import cleartax from "./assests/logo/cleartax-logo.jpg";
+import ey from "./assests/logo/ey01.png";
 import zoho from "./assests/logo/zoho.png";
 import oracle from "./assests/logo/Oracle.svg";
 import razorpay from "./assests/logo/razorpay.svg";
@@ -172,41 +172,43 @@ export const PARTNERS = [
 ];
 //Enterprises and startups use Cloudare as SI partner
 export const PRODUCT_FIRST_SLIDER = [
-  cleartax,
-  odoo,
   ecosi,
-  Hostbook,
-  ey,
-  iris,
-  // alankit,
-  cygnet,
   oracle,
-  zoho,
-  masterindia,
+  cleartax,
   razorpay,
+  cygnet,
+  Hostbook,
+  // alankit,
+  zoho,
+  odoo,
+  ey,
+  masterindia,
+  iris,
+  
 ];
 // Our Clients
 export const PRODUCT_SECOND_SLIDER = [
+  tvs,
   fime,
-  navi,
   bagedo,
   craftsman,
-  motherson,
   lcgc,
   // Changes by - Parineeta Gedam Date - 25/02/2025
-  tvs,
-  cleartrip,
   kiMobility,
-  dorfKetal,
+  navi,
+  motherson,
+  cleartrip,
   wiproPari,
-  curefoods,
-  nextiva,
-  // End of the code 
+  dorfKetal,
   rychem,
-  mindzie,
-  religare,
-  seertree,
+  curefoods,
   portescap,
+  // End of the code 
+  religare,
+  mindzie,
+  seertree,
+  nextiva,
+  
   tpi,
   tata,
   airtel,
