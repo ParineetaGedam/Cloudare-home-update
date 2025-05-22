@@ -35,6 +35,12 @@ import razorpay from "./assests/logo/razorpay.svg";
 import odoo from "./assests/logo/odoo.png";
 import ecosi from "./assests/logo/ecosi.png";
 import Hostbook from "./assests/logo/Hostbook.png";
+import BDO_india from "./assests/logo/BDO_india.png";
+import complyance from "./assests/logo/complyance.png";
+import alvarezmarsal from "./assests/logo/Alvarez-Marsal.png";
+import mastek from "./assests/logo/mastek.png";
+import thinkperfect from "./assests/logo/thinkperfect2.png";
+
 //client logo
 import mindzie from "./assests/logo/mindzie.webp";
 import clearskype from "./assests/logo/clearskye.png";
@@ -176,14 +182,19 @@ export const PRODUCT_FIRST_SLIDER = [
   odoo,
   ecosi,
   Hostbook,
-  ey,
-  iris,
+  // iris,
   // alankit,
   cygnet,
+  complyance,
+  BDO_india,
+  mastek,
   oracle,
   zoho,
-  masterindia,
   razorpay,
+  masterindia,
+  alvarezmarsal,
+  thinkperfect,
+  ey,
 ];
 // Our Clients
 export const PRODUCT_SECOND_SLIDER = [
