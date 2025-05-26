@@ -193,7 +193,7 @@ export const PRODUCT_FIRST_SLIDER = [
   razorpay,
   masterindia,
   alvarezmarsal,
-  thinkperfect,
+  // thinkperfect,
   ey,
 ];
 // Our Clients
