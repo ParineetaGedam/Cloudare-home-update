@@ -1,4 +1,3 @@
-
 // import React, { useState } from "react";
 
 // const countries = [
@@ -32,8 +31,7 @@
 //     flag: "https://flagcdn.com/ca.svg",
 //     link: "https://www.cloudare.in/staffing",
 //   },
-  
-  
+
 //   // Add more countries as needed
 // ];
 
@@ -123,11 +121,6 @@
 // };
 
 // export default CountrySelect;
-
-
-
-
-
 
 // import React, { useState } from "react";
 
@@ -255,7 +248,6 @@
 
 // export default CountrySelect;
 
-
 import React, { useState, useEffect } from "react";
 import "../styles/country.css";
 
@@ -265,7 +257,6 @@ const countries = [
     name: "INDIA",
     flag: "https://flagcdn.com/in.svg",
     link: "https://www.cloudare.in/",
-
   },
   {
     code: "MY",
@@ -295,37 +286,40 @@ const countries = [
 
 const CountrySelect = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // Set "India" as the default selected country
-  const [selectedCountry, setSelectedCountry] = useState(
-    countries.find((country) => country.code === "IN")
-  );
+  const [selectedCountry, setSelectedCountry] = useState(null);
 
+  // Detect user's country using IP location
   useEffect(() => {
     const savedCountry = localStorage.getItem("selectedCountry");
+
     if (savedCountry) {
-      setSelectedCountry(JSON.parse(savedCountry)); // Load country from localStorage if available
+      setSelectedCountry(JSON.parse(savedCountry));
+    } else {
+      fetch("https://ipapi.co/json/")
+        .then((res) => res.json())
+        .then((data) => {
+          const country = countries.find((c) => c.code === data.country);
+          setSelectedCountry(country || countries.find((c) => c.code === "IN")); // fallback to India
+        })
+        .catch(() => {
+          setSelectedCountry(countries.find((c) => c.code === "IN")); // fallback on error
+        });
     }
   }, []);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const handleCountrySelect = (country) => {
-    setSelectedCountry(country); // Update selected country
-    setIsOpen(false); // Close dropdown
-    localStorage.setItem("selectedCountry", JSON.stringify(country)); // Store in localStorage
-    window.open(country.link, "_self"); // Open the country link in the same tab
+    setSelectedCountry(country);
+    setIsOpen(false);
+    localStorage.setItem("selectedCountry", JSON.stringify(country));
+    window.open(country.link, "_self");
   };
 
   return (
-    <div className="country-select-container"> 
-      {/* Dropdown Container */}
+    <div className="country-select-container">
       <div style={{ position: "relative", width: "160px" }}>
-        <div
-          id="country-select"
-          onClick={toggleDropdown}
-          className="country-select-box"
-        >
-          {/* Display selected country by default */}
+        <div onClick={toggleDropdown} className="country-select-box">
           {selectedCountry && (
             <div className="country-display">
               <img
@@ -339,17 +333,13 @@ const CountrySelect = () => {
           <span>{isOpen ? "▲" : "▼"}</span>
         </div>
 
-        {/* Dropdown options */}
         {isOpen && (
-          <div
-            className="country-dropdown"
-          >
+          <div className="country-dropdown">
             {countries.map((country) => (
               <div
-              className="country-item"
+                className="country-item"
                 key={country.code}
-                onClick={() => handleCountrySelect(country)} // Set the selected country on click
-                
+                onClick={() => handleCountrySelect(country)}
               >
                 <img
                   src={country.flag}
@@ -362,7 +352,6 @@ const CountrySelect = () => {
           </div>
         )}
       </div>
-      
     </div>
   );
 };
