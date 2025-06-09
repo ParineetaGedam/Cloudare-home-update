@@ -16,14 +16,14 @@ import occamonics from "./assests/logo/Occamonics.png";
 import rostan from "./assests/logo/ROSTAN.webp";
 import slp from "./assests/logo/SLPMicrosystems.png";
 import smart from "./assests/logo/smart.jfif";
-import ifa from "./assests/logo/ifa.png";
-import penta from "./assests/logo/penta.jfif";
-import path from "./assests/logo/path.jfif";
+// import ifa from "./assests/logo/ifa.png";
+// import penta from "./assests/logo/penta.jfif";
+// import path from "./assests/logo/path.jfif";
 import techgeminus from "./assests/logo/teckgeminus.png";
 
 //Partner logo
-import iris from "./assests/logo/iris.jpg";
-import alankit from "./assests/logo/Alankit-Healthcare.png";
+// import iris from "./assests/logo/iris.jpg";
+// import alankit from "./assests/logo/Alankit-Healthcare.png";
 import cygnet from "./assests/logo/cygnet-group1.png";
 import masterindia from "./assests/logo/masters-india.png";
 import cleartax from "./assests/logo/cleartax-logo.jpg";
@@ -39,7 +39,7 @@ import BDO_india from "./assests/logo/BDO_india.png";
 import complyance from "./assests/logo/complyance.png";
 import alvarezmarsal from "./assests/logo/Alvarez-Marsal.png";
 import mastek from "./assests/logo/mastek.png";
-import thinkperfect from "./assests/logo/thinkperfect2.png";
+// import thinkperfect from "./assests/logo/thinkperfect2.png";
 
 //client logo
 import mindzie from "./assests/logo/mindzie.webp";
@@ -52,7 +52,7 @@ import helea from "./assests/logo/helea.png";
 import priyaasi from "./assests/logo/priyaasi.jpg";
 import bagedo from "./assests/logo/Bagedo.jpg";
 import fibe from "./assests/logo/fibe.jpg";
-import apl from "./assests/logo/apl.jpg";
+// import apl from "./assests/logo/apl.jpg";
 import airtel from "./assests/logo/Bharti_Airtel.webp";
 import cloudnine from "./assests/logo/cloud-nine.webp";
 import crisil from "./assests/logo/crisil.png";
@@ -64,13 +64,13 @@ import sbi from "./assests/logo/sbi.jpg";
 import virtusa from "./assests/logo/virtusa.png";
 import tvs from "./assests/logo/tvs.jpg";
 import tata from "./assests/logo/tata.avif";
-import firstamerica from "./assests/logo/firstamerica.jpg";
-import ace from "./assests/logo/ace.png";
-import bgppl from "./assests/logo/bgppl.jpeg";
-import bilt from "./assests/logo/bilt.png";
+// import firstamerica from "./assests/logo/firstamerica.jpg";
+// import ace from "./assests/logo/ace.png";
+// import bgppl from "./assests/logo/bgppl.jpeg";
+// import bilt from "./assests/logo/bilt.png";
 import lcgc from "./assests/logo/lcgc.jpg";
 import motherson from "./assests/logo/Motherson.jpg";
-import patrick from "./assests/logo/patrick.png";
+// import patrick from "./assests/logo/patrick.png";
 import portescap from "./assests/logo/portescap.png";
 import rychem from "./assests/logo/raychem.png";
 import religare from "./assests/logo/Religare.jpg";
@@ -90,9 +90,9 @@ import wiproPari from "./assests/logo/wipro-pari.png";
 import bolttech from "./assests/logo/my_logos/bolttech-Logo.jpg";
 import graneeMarketing from "./assests/logo/my_logos/granee-marketing.jpg";
 import isuzu from "./assests/logo/my_logos/Isuzu.png";
-import gamuda from "./assests/logo/my_logos/gamuda.png"
+import gamuda from "./assests/logo/my_logos/gamuda.png";
 
-//  End of the code 
+//  End of the code
 
 //Staffing/Clients
 import vaidyas from "./assests/logo/DrVaidyas.webp";
@@ -190,8 +190,7 @@ export const PRODUCT_FIRST_SLIDER = [
   odoo,
   ey,
   masterindia,
-  iris,
-  
+  // iris,
 
   Hostbook,
   // iris,
@@ -207,7 +206,6 @@ export const PRODUCT_FIRST_SLIDER = [
   alvarezmarsal,
   // thinkperfect,
   ey,
-
 ];
 // Our Clients
 export const PRODUCT_SECOND_SLIDER = [
@@ -226,12 +224,12 @@ export const PRODUCT_SECOND_SLIDER = [
   rychem,
   curefoods,
   portescap,
-  // End of the code 
+  // End of the code
   religare,
   mindzie,
   seertree,
   nextiva,
-  
+
   tpi,
   tata,
   airtel,
@@ -261,7 +259,6 @@ export const Malaysia_Clients_SLIDER = [
   gamuda,
 ];
 // End of the code
-
 
 export const SERVICES = [
   {
@@ -622,35 +619,34 @@ export const DEVELOPERS_TESTIMONIALS = [
   },
 
   // Changes by - Parineeta Gedam Date - 04/03/2025
-  { 
-    content: 
-    "Working at Cloudare Technologies has been an incredible journey. The team fosters a collaborative environment where innovation thrives. Work-life balance is prioritized, and the management is always approachable.",
+  {
+    content:
+      "Working at Cloudare Technologies has been an incredible journey. The team fosters a collaborative environment where innovation thrives. Work-life balance is prioritized, and the management is always approachable.",
     rname: "Rahul Sharma",
     rtitle: "Senior Developer",
   },
 
-  { 
-    content: 
-    "Cloudare Technologies truly values its employees. The learning opportunities here are endless, and the leadership is supportive. It's amazing to work in such a dynamic and inclusive workspace.",
+  {
+    content:
+      "Cloudare Technologies truly values its employees. The learning opportunities here are endless, and the leadership is supportive. It's amazing to work in such a dynamic and inclusive workspace.",
     rname: "Priya Verma",
     rtitle: "Software Engineer",
   },
 
-  { 
-    content: 
-    "The culture at Cloudare Technologies is inspiring. There’s always room to grow, and the company invests in its people. I feel valued and motivated every day!",
+  {
+    content:
+      "The culture at Cloudare Technologies is inspiring. There’s always room to grow, and the company invests in its people. I feel valued and motivated every day!",
     rname: "Amit Patel",
     rtitle: "Tech Lead",
   },
 
-  { 
-    content: 
-    "A great place to work! The projects are challenging yet rewarding, and the entire team is super supportive. I’ve grown tremendously in my role.",
+  {
+    content:
+      "A great place to work! The projects are challenging yet rewarding, and the entire team is super supportive. I’ve grown tremendously in my role.",
     rname: "Neha Kapoor",
     rtitle: "UI/UX Designer",
   },
   // End of the code
-  
 ];
 export const WHY_CLOUDARE = [
   {
