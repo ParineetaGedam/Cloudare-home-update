@@ -1,16 +1,18 @@
 @import 'animate.css';
+
 * {
   font-family: "Ember";
   box-sizing: border-box;
 }
-.cloudare-logo{
+
+.cloudare-logo {
   margin: 17px 0 10px 0;
 }
-.nav{
 
+.nav {
   box-shadow: 0 0 20px 0 rgba(204, 202, 202, 0.411);
-  
 }
+
 .top-nav {
   font-size: 18px;
   display: flex;
@@ -21,17 +23,14 @@
   position: fixed;
   left: 0;
   top: 0;
-  right:0;
+  right: 0;
   background-color: #fff;
   z-index: 30;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0 20px;
   height: 80px;
-
   animation-delay: 3s;
-  animation :backIndown 2s;
-
-  
+  animation: backIndown 2s;
 }
 
 .menu {
@@ -42,13 +41,15 @@
   padding: 0;
   align-items: center;
 }
-.active{
+
+.active {
   display: block;
-  color:#1e6069;
+  color: #1e6069;
   border-bottom: 2px solid #1e6069;
   transition: outline 2s bounceInLeft;
 }
-.menu > li {
+
+.menu>li {
   margin: 0 2rem;
   overflow: hidden;
 }
@@ -89,19 +90,20 @@
   margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu-toggle:checked+.menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu-toggle:checked+.menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu-toggle:checked+.menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
+
 a {
   position: relative;
   transition: all 0.2s ease;
@@ -109,19 +111,21 @@ a {
   text-align: center;
 }
 
-.item a{
-color: #616161;
-font-size:20px;
+.item a {
+  color: #616161;
+  font-size: 20px;
 }
+
 .item a:hover {
   display: block;
-  color:#1e6069;
-  
+  color: #1e6069;
 }
+
 @media (max-width: 800px) {
   .menu-button-container {
     display: flex;
   }
+
   .menu {
     position: fixed;
     top: 20px;
@@ -132,44 +136,45 @@ font-size:20px;
     justify-content: center;
     align-items: center;
   }
-  
-  #menu-toggle ~ .menu li {
+
+  #menu-toggle~.menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu li {
-    height: 3em;
 
+  #menu-toggle:checked~.menu li {
+    height: 3em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu li .link {
+
+  #menu-toggle:checked~.menu li .link {
     border: 1px solid #1e6069;
     padding: 5px 10px;
     width: 80%;
     margin: auto;
     border-radius: 4px;
   }
-  #menu-toggle:checked ~ .menu li .link:hover {
-    
-background-color: aliceblue;
-   color:#1e6069
+
+  #menu-toggle:checked~.menu li .link:hover {
+    background-color: aliceblue;
+    color: #1e6069
   }
 
   /* Changes  */
-  #menu-toggle:checked ~ .menu .country-select-container {
+  #menu-toggle:checked~.menu .country-select-container {
     display: flex;
   }
-/* End of the code */
 
-#menu-toggle:checked ~ .menu li .active {
+  /* End of the code */
+  #menu-toggle:checked~.menu li .active {
     border: 2px solid #1e6069;
-
-   color:#1e6069
+    color: #1e6069
   }
-  .menu > li {
+
+  .menu>li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -178,30 +183,8 @@ background-color: aliceblue;
     color: white;
     background-color: white;
   }
-  .menu > li:not(:last-child) {
+
+  .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

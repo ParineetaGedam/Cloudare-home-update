@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import logo from "../assests/images/newLogo.png";
 import "../styles/navbar.css";
 import { NavLink } from "react-router-dom";
-import CountrySelect from './CountrySelect';
+import CountrySelect from "./CountrySelect";
 
 export default function Navigation() {
   return (
@@ -43,7 +43,9 @@ export default function Navigation() {
           </NavLink>
         </li>
         <li className="item">
-          <a href="https://blogs.cloudare.in/" className="link">Blogs</a>
+          <a href="https://blogs.cloudare.in/" className="link">
+            Blogs
+          </a>
         </li>
         <CountrySelect />
       </ul>
