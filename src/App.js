@@ -16,6 +16,7 @@ import Staffing from "./pages/staffing";
 import ReactGa from "react-ga";
 import { Terms } from "./pages/Terms";
 import Proposal from "./components/Proposal";
+import WhatsAppContact from "./pages/WhatsAppContact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ function App() {
   // else{
   return (
     <div className="App">
+      <WhatsAppContact />
       <Router>
         <Routes>
           {" "}
