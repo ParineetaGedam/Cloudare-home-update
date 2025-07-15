@@ -23,10 +23,8 @@ import email from "../assests/images/Vector-8.png";
 // import phone from "../assests/images/Vector-7.png";
 import { Link } from "react-router-dom";
 
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
 
   return (
     <footer>
@@ -34,7 +32,6 @@ export default function Footer() {
         <div style={{ textAlign: "center" }}></div>
         <div className="footer-link">
           <div className="logo-holder">
-
             <a href="/">
               {/* <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -99,14 +96,19 @@ export default function Footer() {
               </a>
             </div>
 ======= */}
-              <img className="img-logo" src={cloudare} width="250px" alt="Logo" />
+              <img
+                className="img-logo"
+                src={cloudare}
+                width="250px"
+                alt="Logo"
+              />
             </a>
             <div className="social-logos-container">
-
               <Link
                 to="https://www.linkedin.com/company/cloudare"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <img src={linkedin} className="social-logos" alt="adin_logo" />
               </Link>
 
@@ -219,6 +221,14 @@ export default function Footer() {
               </a>
             </div>*/}
             {/* >>>>>>> Stashed changes */}
+            <div className="contactUsSec">
+              <p>
+                Contact Us -
+                <a href="tel:+916473703375" className="contactUs">
+                  (+91) 64737-03375
+                </a>
+              </p>
+            </div>
           </div>
           <nav>
             <div className="flex-items">
@@ -329,7 +339,6 @@ export default function Footer() {
 
       <div className="imp-logos">
         <div className="row">
-
           <img
             className=" logo align-logo"
             src={oraclePartner}
@@ -342,7 +351,6 @@ export default function Footer() {
             width="150px"
             alt="Logo"
           />
-
 
           <img
             className="logo align-logo"
@@ -524,7 +532,8 @@ export default function Footer() {
 
         <div class="address">
           <p>
-            7th Floor, Currency Tower, VIP Rd, <br />  Telibandha, Raipur, <br />  Chhattisgarh 492001, India
+            7th Floor, Currency Tower, VIP Rd, <br /> Telibandha, Raipur, <br />{" "}
+            Chhattisgarh 492001, India
           </p>
         </div>
 

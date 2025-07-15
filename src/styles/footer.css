@@ -2,6 +2,7 @@
   font-family: "Ember";
 }
 
+
 /* 
 .subscribe{
     padding:4% 0 0 0;
@@ -152,6 +153,8 @@ input{
   cursor: pointer;
 }
 /* Media Queries */
+
+
 /* @media screen and (max-width: 1033px) {
   #footer {
     height: 100%;
@@ -236,7 +239,6 @@ nav {
   flex-direction: column;
   height: 300px;
   justify-content: flex-start;
-
   font-size: inherit;
   color: white;
 }
@@ -249,15 +251,27 @@ nav {
   margin: 10px 55px 0px 0;
 }
 
+
 /* .logo:hover {
   animation: bounce 0.1s ease-in-out;
 }  */
 
+
 /* .logo:hover {  */
+
+
 /* animation: zoomIn 5s;  */
+
+
 /* animation: zoomIn 5s forwards; */
+
+
 /* transform: scale(1.1);  */
+
+
 /* } */
+
+
 /* .logo-holder .logo:hover {
   animation: zoomIn 1s;
 } */
@@ -294,6 +308,7 @@ nav {
   padding: 0;
 }
 
+
 /* .social-logos-container {
   display: flex;
   margin: 2%;
@@ -305,6 +320,7 @@ nav {
   margin-top: -17px;
 } */
 
+
 /* .social-logos {
   display: flex;
   margin: 2%;
@@ -313,7 +329,9 @@ nav {
   height: 23px;
   margin-left: 9px;
   margin-right: 0.6rem; */
-  /* <<<<<<< HEAD
+
+
+/* <<<<<<< HEAD
   margin-top: -17px;
 }
 
@@ -322,6 +340,8 @@ nav {
   transform: scale(1.1);
 
   /* animation: zoomIn 1s; */
+
+
 /* } */
 
 
@@ -331,7 +351,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .social-logos {
@@ -343,7 +362,6 @@ nav {
   margin-left: 9px;
   margin-right: 0.6rem;
 }
-
 
 .social-logos :hover {
   cursor: pointer;
@@ -361,6 +379,7 @@ nav {
   text-align: center;
 }
 
+
 /* .imp-logos {
   display: flex;
   justify-content: center;
@@ -368,16 +387,18 @@ nav {
   /* gap: 10px;
   margin: 5 0 0 10px;
   padding: 0 0 10px 0; */
-/* } */ 
+
+
+/* } */
 
 
 /* Change by - Parineeta Gedam */
 
-.img-logos{
+.img-logos {
   display: flex;
 }
 
-.row{
+.row {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
@@ -392,7 +413,6 @@ nav {
 
   .footer-link {
     flex-direction: column;
-
     /*  */
     justify-content: center;
     align-items: center;
@@ -411,19 +431,18 @@ nav {
     /* display: flex;
     flex-wrap: wrap;
     flex-direction: row; */
-    /* margin: 5px 18px; */
-    /* gap: 10px; */
-    /* display: flex; */
-    /* justify-content: space-between;
+  /* margin: 5px 18px; */
+  /* gap: 10px; */
+  /* display: flex; */
+  /* justify-content: space-between;
     align-items: center; */
   /* }  */
-
-
   /* Change by - Parineeta Gedam */
-  .img-logos{
+  .img-logos {
     display: flex;
   }
-  .row{
+
+  .row {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -432,7 +451,6 @@ nav {
   }
 
   /* End of the code */
-
   .logo {
     margin: 5px 0;
   }
@@ -463,6 +481,7 @@ nav {
     height: 150px !important;
   }
 }
+
 
 /* <<<<<<< HEAD
 =======
@@ -513,7 +532,10 @@ h1 {
   }
 }
 
+
 /* Reset some default browser styles */
+
+
 /* body, h2, p {
   margin: 0;
   padding: 0;
@@ -526,6 +548,7 @@ body {
   background-color: #f4f4f9;
   color: #333;
 } */
+
 
 /* .address-section {
   padding: 50px 20px;
@@ -552,6 +575,7 @@ body {
   margin-top: 20px;
 } */
 
+
 /* .address-icon {
   flex-shrink: 0;
   width: 60px;
@@ -567,6 +591,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
 } */
+
 
 /* .address-details {
   text-align: left;
@@ -585,13 +610,17 @@ body {
   line-height: 1.6;
   text-align: center;
 } */
+
+
 /* .separator {
   align-self: center;
   font-size: 3em;
   color: #ccc;
 } */
 
+
 /* Responsive adjustments */
+
 @media (max-width: 768px) {
   /* .address-container {
     flex-direction: column;
@@ -602,6 +631,31 @@ body {
   } */
 }
 
+.contactUsSec {
+  margin: 20px 0 0 0;
+  color: #ccc;
+}
+
+.contactUsSec p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  /* space between text and number */
+  margin: 0;
+  font-size: 16px;
+}
+
+.contactUs {
+  cursor: pointer;
+  color: #ccc;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contactUs:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
 
 .address-container {
   display: flex;
@@ -641,13 +695,11 @@ body {
 }
 
 @media (max-width: 1024px) {
-
   .address-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 0px;
-
   }
 
   .address {
@@ -663,14 +715,12 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .address-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 0px;
   }
-
 
   .address {
     width: 100%;
